@@ -15,9 +15,34 @@
       <div class="wrap_r">
         <div class="wrap_r_top_con">
           <em><i class="icon iconfont icon-wodefill"></i>超級管理員</em>
-          <em><i class="icon iconfont icon-yuanxingxuanzhongfill"></i>在線</em>
+          <em><i class="icon iconfont icon-yuanxingxuanzhongfill"></i>在线</em>
           <em>
-            <strong><i class="el-icon-caret-bottom"></i></strong>
+            <el-dropdown>
+              <span class="el-dropdown-link">
+                <i class="icon iconfont icon-xiangxia1"></i>
+              </span>
+              <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item><i class="icon iconfont icon-yuanxingxuanzhongfill"></i>在线</el-dropdown-item>
+                <el-dropdown-item><i class="icon iconfont icon-shizhong"></i>离开</el-dropdown-item>
+                <el-dropdown-item><i class="icon iconfont icon-manglu"></i>忙碌</el-dropdown-item>
+                <el-dropdown-item disabled>我的企业</el-dropdown-item>
+                <el-dropdown-item divided>用户中心</el-dropdown-item>
+                <el-dropdown-item disabled>问题反馈</el-dropdown-item>
+                <el-dropdown-item divided>联系客服</el-dropdown-item>
+                <el-dropdown-item divided>系统设置</el-dropdown-item>
+              </el-dropdown-menu>
+            </el-dropdown>
+          </em>
+          <em><i class="icon iconfont icon-jianhao"></i></em>
+          <em><i class="icon iconfont icon-fangxingweixuanzhong"></i></em>
+          <em><i class="icon iconfont icon iconfont icon-guanbi1"></i></em>
+        </div>
+        <div class="wrap_r_bottom_con">
+          <div>访客数 - <span>0</span>人</div>
+          <div>对话中 - <span>0</span>人</div>
+          <div>访客数 - <span>0</span>人</div>
+          <div>已邀请 - <span>0</span>人</div>
+          <div>
             <el-select v-model="value" placeholder="请选择">
               <el-option
                 v-for="item in options"
@@ -26,12 +51,8 @@
                 :value="item.value">
               </el-option>
             </el-select>
-          </em>
-          <em><i class="icon iconfont icon-jianhao"></i></em>
-          <em><i class="icon iconfont icon-fangxingweixuanzhong"></i></em>
-          <em><i class="icon iconfont icon iconfont icon-guanbi1"></i></em>
+          </div>
         </div>
-        <div class="wrap_r_bottom_con"></div>
       </div>
     </div>
     <router-view/>
@@ -39,19 +60,19 @@
 </template>
 
 <script>
+
 export default {
   name: 'app',
   data() {
     return {
       options: [{
-        value: '选项1',
-        label: '黄金糕'
-      }, {
-        value: '选项2',
-        label: '双皮奶'
-      }, {
-        value: '选项3',
-        label: '蚵仔煎'
+        value: '1',
+        label: '全部网站',
+        classname:"icon-yuanxingxuanzhongfill"
+      },{
+        value: '2',
+        label: 'www.baidu.com',
+        classname:"icon-yuanxingxuanzhongfill"
       }],
       value: ''
     }
@@ -105,9 +126,11 @@ export default {
     float: right;
   }
   .wrap_r_top_con  {
-    text-align: center;
+    text-align: right;
     height: 20px;
     line-height: 20px;
+    padding-top: 2px;
+    padding-bottom: 10px;
   }
   .wrap_r_top_con em {
     position: relative;
@@ -135,12 +158,34 @@ export default {
       display: inline-block;
       opacity: 0
   }
+  .wrap_r_top_con em:nth-child(5) i {
+    font-size: 12px;
+  }
   .popper__arrow {
-    left: 61%!important;
+    left: 85%!important;
   }
   .wrap_r_top_con em:nth-child(3) .el-select input {
     width: 20px;
     padding: 0;
     height: auto;
+  }
+  .wrap_r_bottom_con>div {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin-right: 8px;
+  }
+  .wrap_r_bottom_con>div:last-child {
+    margin-right: 0
+  }
+  .wrap_r_bottom_con>div span {
+    color: #f8dd48;
+  }
+  .wrap_r_bottom_con>div .el-select input {
+      height: 30px;
+  }
+  .el-dropdown-menu li i {
+    margin-right: 2px;
   }
 </style>

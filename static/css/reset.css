@@ -49,6 +49,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+html,body {
+	width: 100%;
+	height: 100%;
+}
 html {
 	font-size: 12px;
 }
@@ -248,7 +252,7 @@ html {
 
 .icon-xiangshang5:before { content: "\e770"; }
 
-.icon-xiangxia1:before { content: "\e771"; }
+.icon-xiangxia1:before { content: "\e771";color: #fff; }
 
 .icon-xiangxia2:before { content: "\e772"; }
 
@@ -290,7 +294,7 @@ html {
 
 .icon-xiaoxi:before { content: "\e613"; }
 
-.icon-manglu:before { content: "\e625"; }
+.icon-manglu:before { content: "\e625"; color: #f13f65}
 
 .icon-xiaoxi1:before { content: "\e778"; }
 
