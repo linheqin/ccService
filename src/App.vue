@@ -3,11 +3,19 @@
     <div class="wrap clearfix">
       <div class="wrap_l">
         <img src="./assets/logo.png" class="logo">
-        <a href="" class="nav_btn sel">
+       <!--  <router-link to="/workbench">
+          <i class="icon iconfont icon-xiaoxi"></i></br>
+          <span>工作台</span>
+        </router-link>
+        <router-link to="/managementBackstage">
+          <i class="el-icon-setting"></i></br>
+          <span>后台管理</span>
+        </router-link> -->
+        <a class="nav_btn sel" v-on:click="showTabCon(0)">
           <i class="icon iconfont icon-xiaoxi"></i></br>
           <span>工作台</span>
         </a>
-        <a href="" class="nav_btn">
+        <a class="nav_btn" v-on:click="showTabCon(1)">
           <i class="el-icon-setting"></i></br>
           <span>后台管理</span>
         </a>    
@@ -55,7 +63,10 @@
         </div>
       </div>
     </div>
-    <router-view/>
+    <div class="tab_con">
+      <div class="tab_con_item" index="0" v-show="navIndex==0">工作台</div>
+      <div class="tab_con_item" index="1" v-show="navIndex==1">后台管理</div>
+    </div>
   </div>
 </template>
 
@@ -63,6 +74,7 @@
 
 export default {
   name: 'app',
+  
   data() {
     return {
       options: [{
@@ -74,7 +86,14 @@ export default {
         label: 'www.baidu.com',
         classname:"icon-yuanxingxuanzhongfill"
       }],
-      value: ''
+      value: '',
+      navIndex: 0
+    }
+  },
+  methods: {
+    showTabCon: function (index) {
+      console.log(index);
+      this.navIndex = index;
     }
   }
 }
@@ -86,7 +105,19 @@ export default {
     height: 74px;
     background: rgb(41,154,218);
   }
-
+  .showTabCon {
+    cursor: pointer;
+  }
+  .tab_con {
+    position: absolute;
+    left: 0;
+    top: 74px;
+    right: 0;
+    bottom: 0;
+  }
+  .none {
+    display: none;
+  }
   .wrap_l {
     float: left;
   }
