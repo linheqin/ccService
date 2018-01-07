@@ -155,7 +155,6 @@
               <div class="RightCont">
                 <div class="ChatRecord">查看更多消息</div>
                 <ul class="newsList">
-                    
                 </ul>
               </div>
               <div class="RightFoot">
