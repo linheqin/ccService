@@ -333,7 +333,41 @@
           </ul>
         </div>
         <div class="navul_con">
-            <div v-show="navUlIndex==0">1</div>
+            <div v-show="navUlIndex==0">
+              <div class="navul_left">
+                <div class="side_bar_nav_title">账号中心</div>
+                <ul class="menu">
+                  <li class="menu_item">
+                    <h3 class="cls">
+                      <span class="left" style="*margin-top:10px">
+                        <img class="title_ico" src="./assets/img/oc_left_01.gif"> 
+                        <a class="font_bold inherit" href="#">账号信息</a>
+                      </span>
+                    </h3>
+                    <ul class="none menu_1" style="display: block;">
+                      <li id="item-11-1" isck="1" class="on">
+                        <a class="block_w" href="index.php?c=AccountCenter" target="if_content_t">账户信息</a>
+                      </li>
+                      <li id="item-11-2" isck="1" class="">
+                        <a class="block_w" href="index.php?c=AccountCenter&amp;a=service" target="if_content_t">账户明细</a>
+                      </li>
+                      <li id="item-11-5" isck="1" class="">
+                        <a class="block_w" href="index.php?c=AccountCenter&amp;a=userorder" target="if_content_t">我的订单</a>
+                      </li>                                                
+                      <li id="item-11-3" isck="1" class="">
+                        <a class="block_w" href="index.php?c=AccountCenter&amp;a=changepwd" target="if_content_t">修改密码</a>
+                      </li>
+                      <li id="item-11-9" isck="1" class="">
+                        <a class="block_w" href="index.php?c=AccountCenter&amp;a=consultService" target="if_content_t">专属客服顾问</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="navul_right">
+                
+              </div>
+            </div>
             <div v-show="navUlIndex==1" >2</div>
             <div v-show="navUlIndex==2" >3</div>
             <div v-show="navUlIndex==3" >4</div>
@@ -534,6 +568,16 @@ export default {
     padding: 0 10px;
     height: 74px;
     background: rgb(41,154,218);
+  }
+  .side_bar_nav_title {
+    height: 35px;
+    background: url(./assets/img/back7.jpg) no-repeat;
+    width: 100%;
+    font-size: 14px;
+    color: #c57015;
+    text-indent: 38px;
+    line-height: 38px;
+    font-weight: bold;
   }
   .nav_n_2 {
     padding: 0 15px;
