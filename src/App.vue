@@ -297,7 +297,54 @@
           </div>
         </div>
       </div>
-      <div class="tab_con_item" index="1" v-show="navIndex==1">后台管理</div>
+      <div class="tab_con_item" index="1" v-show="navIndex==1">
+        <div id="nav_n_2" class="nav_n_2">
+          <ul class="navul_n_2">
+            <li v-on:click="tabShowBoxs" index="0" class="nav_nindex"> 
+              账号中心
+            </li>
+            <li v-on:click="tabShowBoxs" index="1">
+              商家站点 
+            </li>                             
+            <li v-on:click="tabShowBoxs" index="2">
+              客服管理 
+            </li>                             
+            <li v-on:click="tabShowBoxs" index="3">
+              权限管理 
+            </li>                             
+            <li v-on:click="tabShowBoxs" index="4">
+              设置中心
+            </li>                             
+            <li v-on:click="tabShowBoxs" index="5">
+              客服监控 
+            </li>                             
+            <li v-on:click="tabShowBoxs" index="6">
+              客户管理 
+            </li>                             
+            <li v-on:click="tabShowBoxs" index="7">
+              记录中心 
+            </li>
+            <li v-on:click="tabShowBoxs" index="8">
+              数据统计 
+            </li>                             
+            <li v-on:click="tabShowBoxs" index="9">
+              智能机器人
+            </li>   
+          </ul>
+        </div>
+        <div class="navul_con">
+            <div v-show="navUlIndex==0">1</div>
+            <div v-show="navUlIndex==1" >2</div>
+            <div v-show="navUlIndex==2" >3</div>
+            <div v-show="navUlIndex==3" >4</div>
+            <div v-show="navUlIndex==4" >5</div>
+            <div v-show="navUlIndex==5" >6</div>
+            <div v-show="navUlIndex==6" >7</div>
+            <div v-show="navUlIndex==7" >8</div>
+            <div v-show="navUlIndex==8" >9</div>
+            <div v-show="navUlIndex==9" >10</div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -322,6 +369,7 @@ export default {
       value: '',
       navIndex: 0,
       chat_index: 0,
+      navUlIndex: 0,
       isNavSel: true,
       isNavSels: false,
       showInfo: true,
@@ -397,23 +445,62 @@ export default {
         this.isNavSels = true;
       }
     },
-    tabShowBox: function(event){
+    tabShowBoxs: function(event){
       console.log(event);
+
       var ement = event.target;
       var ementIndex = ement.attributes[0].value;
-      this.chat_index = ementIndex;
+      this.navUlIndex = ementIndex;
 
-      // 设置样式
-      // ement.siblings
-      // ement.className = "sel";
+
       var siblingElem = this.getSiblins(ement);
       for (var i = 0; i < siblingElem.length; i++) {
         siblingElem[i].className = "";      
       }
+
+      // siblingElem.className= "";
+      ement.className = "nav_nindex";
+      console.log(siblingElem);
+
+    },
+    getNanIndex: function(ementIndex) {
+      this.chat_index = ementIndex;
+    },
+    getSiblins: function(elem) {
+      var r = [];
+      var n = elem.parentNode.firstChild;
+      for ( ; n; n = n.nextSibling ) {
+        if ( n.nodeType === 1 && n !== elem ) {
+          r.push( n );
+        }
+      }
+
+      return r;
+    },
+    tabShowBox: function(event){
+      console.log(event);
+      console.log(chatype);
+      var ement = event.target;
+      var ementIndex = ement.attributes[0].value;
+      if(chatype == 1) {
+        this.navUlIndex = ementIndex;
+      } else {
+        this.chat_index = ementIndex;
+      }
+
+
+      var siblingElem = this.getSiblins(ement);
+      for (var i = 0; i < siblingElem.length; i++) {
+        siblingElem[i].className = "";      
+      }
+
       // siblingElem.className= "";
       ement.className = "sel";
       console.log(siblingElem);
 
+    },
+    getNanIndex: function(ementIndex) {
+      this.chat_index = ementIndex;
     },
     getSiblins: function(elem) {
       var r = [];
@@ -448,6 +535,12 @@ export default {
     height: 74px;
     background: rgb(41,154,218);
   }
+  .nav_n_2 {
+    padding: 0 15px;
+    position: relative;
+    height: 36px;
+    background: url(./assets/img/navbg.jpg) repeat-x left;
+  }
   .showTabCon {
     cursor: pointer;
   }
@@ -457,6 +550,9 @@ export default {
     top: 74px;
     right: 0;
     bottom: 0;
+  }
+  .tab_con_item {
+    height: 100%;
   }
   .tab_con_item .el-table td, .tab_con_item  .el-table th {
     font-size: 12px;
