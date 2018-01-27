@@ -133,7 +133,7 @@ textarea {
     height: 36px;
     line-height: 36px;
 }
-#nav_n_2 .navul_n_2 li {
+#nav_n_2 .navul_n_2 a {
     cursor: pointer;
     float: left;
     height: 36px;
@@ -143,12 +143,22 @@ textarea {
     width: 80px;
     text-align: center;
 }
+#nav_n_2 .navul_n_2 a.router-link-active {
+    background: #4c8aeb;
+    color: #fff;
+}
 .menu .menu_item {
 	line-height: 28px;
 	_height: 25px;
 	text-indent: 28px;
 	color: #686868;
 	cursor: pointer;
+}
+.flex {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
 }
 .menu .menu_item h3 {
     margin-left: -13px;
@@ -164,7 +174,7 @@ textarea {
 	right: 0;
 	bottom: 0;
 }
-.navul_con>div {
+.navul_con>div.flex {
 	display: flex;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -179,6 +189,139 @@ textarea {
 .wangEditor .btn-container {
 	background-color: #F0F0EE;
 }
+.search_group_c {
+	position: relative;
+    width: 356px;
+    height: 30px;
+}
+.search_group_c .search_group_text {
+	float: left;
+    width: 274px;
+    height: 22px;
+    outline: 0 none;
+    vertical-align: middle;
+    line-height: 22px;
+    font-size: 13px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-right: 0 none;
+    background: #ffffff;
+    padding: 3px 3px 3px 6px;
+    font-family: "Microsoft YaHei","微软雅黑",helvetica,arial,verdana,tahoma,sans-serif;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.search_group_c .search_group_btn {
+/*	background: transparent url(/templates/images/search_icon_1.png) no-repeat;*/
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 76px;
+    height: 30px;
+    outline: 0 none;
+    border: 0 none;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.tab_11 {
+	border: solid 1px #c7dcef;
+    line-height: 16px;
+    margin-top: 10px;
+}
+.table_default {
+	font-family: tahoma, arial, sans-sarif;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+}
+.tab_11 th, .tab_11 td {
+	text-align: center;
+}
+.tab_11 th {
+	padding: 6px 0px 4px;
+	font-weight: bold;
+	color: #003E7E;
+	background: #ddeefe;
+}
+.table_default th {
+    padding: 10px 0px 9px;
+    color: #444;
+    font-size: 13px;
+    line-height: 19px;
+    -webkit-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 1.0);
+    -moz-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 1.0);
+    box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 1.0);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#f3f3f3));
+    background: -moz-linear-gradient(top,#fafafa,#f3f3f3);
+    background: -ms-linear-gradient(top,#fafafa,#f3f3f3);
+    background-color: #f5f5f5;
+}
+.table_default tr td {
+	border-top: 1px solid #e8e8e8;
+    background: #FFF;
+    padding: 10px 0px 9px;
+    color: #666;
+    font-size: 13px;
+}
+.tab_11_sz {
+	border: solid 1px #c7dcef;
+    line-height: 18px;
+    margin-top: 10px;
+}
+.tab_11_sz th, .tab_11_sz td {
+	text-align: left;
+}
+.tab_11_sz th {
+	padding: 6px 0px 4px 10px;
+    font-weight: bold;
+    color: #395b7e;
+    background: #ddeefe;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #c7dcef;
+    height: 20px;
+}
+.tab_11_sz td {
+	padding: 8px 0px 4px 10px;
+    background: #F4F9FF;
+    color: #587293;
+    height: 20px;
+}
+.tab_11_sz td {
+	padding: 5px 0px 5px 10px;
+}
+#tab_left_sz .rgbg td {
+	background-color: #A3DAFF;
+}
+.tab_11_sz a {
+	color: #365C8D;
+}
+
+.tab_11_kfsz_01 th {
+	padding: 6px 0px 4px 15px;
+    font-weight: bold;
+    color: #395b7e;
+    background: #ddeefe;
+    border-top: solid 1px #fff;
+}
+.tab_11_kfsz_01 td {
+	padding: 8px 0px 6px 15px;
+    background: #f9fdff;
+    color: #555555;
+    border-top: solid 1px #c7dcef;
+}
+.tab_11_kfsz_01 td {
+	padding: 10px 0px 8px 15px;
+}
+.rolelisttr {
+	cursor: pointer;
+}
+
 .textarea {
 	padding: 5px;
 }
@@ -199,6 +342,11 @@ textarea {
 .navul_left, .navul_right {
 	overflow-y: auto;
 	overflow-x: hidden;	
+    min-height: calc(100% - 110px);
+}
+.accountCenter {
+    overflow: hidden;
+    height: 100%;
 }
 .btn_form_c {
     background-color: #FFF;
@@ -1568,6 +1716,10 @@ a#remove { background-position: left -850px;}
     margin-left:5px;
     vertical-align:middle;
 }
+div.heightOver {
+    overflow: hidden;
+    height: 100%;
+}
 
 /** 网站管理-代码管理弹出窗 **/
 #code_form_ct ul {border:none;width:100%;height:36px;font-family:'Microsoft Yahei','微软雅黑';font-size:14px;background-color:#EEF7F5;}
@@ -1589,3 +1741,9 @@ a#remove { background-position: left -850px;}
     font-family: 'Microsoft Yahei','微软雅黑';
     border-radius: 3px;
 }
+.setView_l,.setView_r {
+    float: left;
+    width: 50%;
+}
+.clearflex {zoom:1;}    /*==for IE6/7 Maxthon2==*/
+.clearflex:after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
