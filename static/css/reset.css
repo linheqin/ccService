@@ -2367,5 +2367,41 @@ element.style {
 .page_1 * {
   vertical-align: middle;
 }
+.icon_open_color_slc {
+    line-height: 0;
+    cursor: pointer;
+    float: left;
+    margin-left: 3px;
+    padding: 3px;
+    border-radius: 3px;
+}
+.tab_ser_invite .title_kf_cp {
+    color: #346699;
+    font-weight: bolder;
+    margin-left: 2px;
+    background: url(../img/kf_icon07003.gif) no-repeat right;
+    width: 70px;
+}
+ul.dq_li {
+    float: left;
+    width: 96px;
+    padding: 5px;
+    background: #FFF;
+    border: 1px solid #e0e2e5;
+}
+ul.dq_li li {
+    width: 30px;
+    height: 30px;
+    background: #deefff;
+    float: left;
+    margin: 0px 3px 3px 0px;
+    cursor: pointer;
+}
+.box_kfcp_003 li {
+    height: 56px;
+    width: 152px;
+    margin-bottom: 5px;
+}
+
 .clearflex {zoom:1;}    /*==for IE6/7 Maxthon2==*/
 .clearflex:after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}

@@ -162,7 +162,7 @@
       <div class="nav_itemco none">
         <div class="location">您当前的位置：CC客服 &gt; <span>设置中心</span> &gt; <span>咨询图标</span></div>
         <div class="cls">
-          <form action="index.php?c=ConsultationCfg&amp;a=doConsultation" method="post" id="conversation_form">
+          <form action="index.php?c=ConsultationCfg&amp;a=doConsultation" method="post" id="conversation_form" style="padding-bottom:70px;">
             <input type="hidden" name="website" value="133299">
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tbody>
@@ -180,7 +180,8 @@
                       </tr>
                       <tr>
                         <td colspan="2">
-                          <div style="background:url(../../assets/img/kf_bg0701.gif) repeat-x;height:2px">
+                          <div>
+                            <img src="../../assets/img/kf_bg0701.gif" style="width:100%;height:2px">
                           </div>
                         </td>
                       </tr>
@@ -206,7 +207,7 @@
                           <div class="kf_zdy_main" id="kf_zdy_main" style="display:none">
                             <div class="box_kfcp_003">
                               <ul>
-                                <li class="this"><img them="beauty_01" src=../../assets/img/beauty_01_lite.png" rel="beauty_01" class="select_img"></li>
+                                <li class="this"><img them="beauty_01" src="../../assets/img/beauty_01_lite.png" rel="beauty_01" class="select_img"></li>
                                 <li><img them="flower_01" src="../../assets/img/flower_01_lite.png" rel="flower_01" class="select_img"></li>
                                 <li><img them="flower_02" src="../../assets/img/flower_02_lite.png" rel="flower_02" class="select_img"></li>
                                 <li><img them="flower_03" src="../../assets/img/flower_03_lite.png" rel="flower_03" class="select_img"></li>
@@ -1546,7 +1547,8 @@
                           <input name="iconHeadPicType" type="radio" checked="" value="2"><label class="iconHeadPicType_label">&nbsp;区别在线/离线</label>&nbsp;
                           <div style="margin-top:5px;border: 1px dashed #ccc;margin-bottom:6px;height:227px;">
                             <div class="upload_btn_cls" id="iconHeadPicType_zs" style="float:left;margin:10px;margin-bottom:0;display:inline;">
-                              <div style="border:1px solid #ccc;width:150px;height:150px;background-image:url(../../assets/img/headPicOnline.png)" data-src="../../assets/img/headPicOnline.png" id="headPicOnlineUrl_p">
+                              <div style="border:1px solid #ccc;width:150px;height:150px;" id="headPicOnlineUrl_p">
+                                <img src="../../assets/img/headPicOnline.png" data-src="../../assets/img/headPicOnline.png"  style="display:block;width100%;height:100%;">
                               </div>
                               <div style="margin:5px 13px;" id="headPicOnline_upload" class="webuploader-container">
                                 <div class="webuploader-pick">
@@ -1558,7 +1560,8 @@
                               </div>
                             </div>
                             <div class="upload_btn_cls" id="iconHeadPicType_qb" style="float:left;margin:10px;margin-bottom:0;display:inline;">
-                              <div style="border:1px solid #ccc;width:150px;height:150px;background-image:url(../../assets/img/headPicOffline.png)" data-src="../../assets/img/headPicOffline.png" id="headPicOfflineUrl_p">
+                              <div style="border:1px solid #ccc;width:150px;height:150px;s" id="headPicOfflineUrl_p">
+                                <img src="../../assets/img/headPicOffline.png" data-src="../../assets/img/headPicOffline.png"  style="display:block;width100%;height:100%;">
                               </div>
                               <div style="margin:5px 13px;" id="headPicOffline_upload" class="webuploader-container">
                                 <div class="webuploader-pick">
@@ -1801,11 +1804,464 @@
       </div>
       <div class="nav_itemco none">
         <div class="location">您当前的位置：CC客服 &gt; <span>设置中心</span> &gt; <span>邀请窗口</span></div>
-          3
+        <form action="index.php?c=InviteCfg&amp;a=doInvite" method="post" id="invite_form" style="padding-bottom:70px;"> 
+          <div id="ser_invite_r" style="width:1210px" class="cls"> 
+            <div class="ser_invite_view_left" style="width:452px"> 
+             <input type="hidden" name="website" id="website" value="133299" /> 
+             <div style="width:452px; background-color: #F9FBFF; border:1px solid #c5e0ed;"> 
+              <table width="100%" border="0" cellspacing="5" cellpadding="0" class="tab_ser_invite" id="kf_main"> 
+               <tbody>
+                <tr> 
+                 <td colspan="2">
+                  <div class="title_kf_cp" style="width:94px;">
+                   窗口风格设置
+                  </div></td> 
+                </tr> 
+                <tr> 
+                 <td colspan="2">
+                  <div style="background:url('../../assets/img/kf_bg0701.gif') repeat-x;height:2px"></div></td> 
+                </tr> 
+                <tr> 
+                 <th scope="row">显示类型：</th> 
+                 <td> <input name="showType" type="radio" value="1" checked="" /><label class="showType_lbl"> 系统主题</label>　 <input name="showType" type="radio" value="2" /><label class="showType_lbl"> 自定义</label> &nbsp;&nbsp;&nbsp;&nbsp;<span class="ck_helptips" data-html="简单快速设置自定义邀请窗口，您只需要上传您的邀请窗口图片，拖动同意邀请以及拒绝邀请点击区域后保存即可！&lt;br/&gt;图片示例：&lt;div style='margin-top:5px;'&gt;&lt;img width='361' src='../../assets/img/19_13952084581133.jpg' /&gt;&lt;/div&gt;" data-offset="-50" data-position="bottom right" data-variation="inverted" style="vertical-align:middle;padding-left:16px;height:14px;line-height:14px;display:inline-block;color:#F26E5E; no-repeat;">自定义设置帮助</span> </td> 
+                </tr> 
+                <tr class="sys_type_show"> 
+                 <th scope="row">&nbsp;</th> 
+                 <td> 
+                  <div id="themesdiv" style="width:342px;height:118px;padding:5px 0 0px 10px;border: 1px solid #E0E2E5;" class="box_kfcp_003"> 
+                   <ul> 
+                    <li class="this"><img src="../../assets/img/new_themes_01.png" rel="new_themes_01" class="select_img" /></li> 
+                    <li><img src="../../assets/img/beauty_01.png" rel="beauty_01" class="select_img" /></li> 
+                    <li><img src="../../assets/img/flower_01.png" rel="flower_01" class="select_img" /></li> 
+                    <li><img src="../../assets/img/flower_02.png" rel="flower_02" class="select_img" /></li> 
+                    <li><img src="../../assets/img/flower_03.png" rel="flower_03" class="select_img" /></li> 
+                    <li><img src="../../assets/img/flower_04.png" rel="flower_04" class="select_img" /></li> 
+                    <li><img src="../../assets/img/flower_05.png" rel="flower_05" class="select_img" /></li> 
+                    <li><img src="../../assets/img/flower_06.png" rel="flower_06" class="select_img" /></li> 
+                    <li><img src="../../assets/img/flower_07.png" rel="flower_07" class="select_img" /></li> 
+                    <li><img src="../../assets/img/flower_08.png" rel="flower_08" class="select_img" /></li> 
+                    <li><img src="../../assets/img/panel_01.png" rel="panel_01" class="select_img" /></li> 
+                    <li><img src="../../assets/img/panel_02.png" rel="panel_02" class="select_img" /></li> 
+                    <li><img src="../../assets/img/panel_03.png" rel="panel_03" class="select_img" /></li> 
+                    <li><img src="../../assets/img/panel_04.png" rel="panel_04" class="select_img" /></li> 
+                    <li><img src="../../assets/img/panel_05.png" rel="panel_05" class="select_img" /></li> 
+                    <li><img src="../../assets/img/panel_06.png" rel="panel_06" class="select_img" /></li> 
+                    <li><img src="../../assets/img/panel_07.png" rel="panel_07" class="select_img" /></li> 
+                    <li><img src="../../assets/img/default.png" rel="default" class="select_img" /></li> 
+                    <li><img src="../../assets/img/red.png" rel="red" class="select_img" /></li> 
+                    <li><img src="../../assets/img/green.png" rel="green" class="select_img" /></li> 
+                    <li><img src="../../assets/img/gray.png" rel="gray" class="select_img" /></li> 
+                    <li><img src="../../assets/img/black.png" rel="black" class="select_img" /></li> 
+                    <li><img src="../../assets/img/rose.png" rel="rose" class="select_img" /></li> 
+                    <li><img src="../../assets/img/purple.png" rel="purple" class="select_img" /></li> 
+                    <li><img src="../../assets/img/blue.png" rel="blue" class="select_img" /></li> 
+                    <li><img src="../../assets/img/brown.png" rel="brown" class="select_img" /></li> 
+                    <li><img src="../../assets/img/cuilv.png" rel="cuilv" class="select_img" /></li> 
+                   </ul> 
+                  </div> 
+                  <div style="height:8px;width:8px;">
+                   &nbsp;
+                  </div> </td> 
+                </tr> 
+                <tr class="zdy_type_show" style="display:none;"> 
+                 <th class="v_top" scope="row">&nbsp;</th> 
+                 <td rel="up_invite_pre"> 
+                  <div style="width:354px;height:114px;"> 
+                   <div id="zdy_invite_bg_img" rel="0" style="float:left;">
+                    <img src="../../assets/img/invite_bg.png" style="width:230px;height:112px;border:1px solid #ccc" />
+                   </div> 
+                   <div style="float:left;"> 
+                    <div style="margin-left:15px;margin-top:20px;"> 
+                     <div>
+                      <label>宽度</label>：
+                      <input name="winwidth" type="text" value="480" class="text1 inputcheck" style="width:30px" /> px 
+                     </div> 
+                     <div style="margin-top:5px;">
+                      <label>高度</label>：
+                      <input name="winheight" type="text" value="266" class="text1 inputcheck" style="width:30px" /> px 
+                     </div> 
+                    </div> 
+                    <div style="margin-left:20px;margin-top:10px;" id="fileup_up_invite" class="upload_btn_cls file_upload_cls webuploader-container" rel="up_invite">
+                     <div class="webuploader-pick">
+                      上传图片
+                     </div>
+                     <div id="rt_rt_1c5kt6rk11ak81l37nd51mh1lje1" style="position: absolute; top: 0px; left: 0px; width: 80px; height: 24px; overflow: hidden; bottom: auto; right: auto;">
+                      <input type="file" name="file" class="webuploader-element-invisible" multiple="multiple" accept="image/*" />
+                      <label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+                     </div>
+                    </div> 
+                   </div> 
+                  </div> 
+                  <div style="height:8px;width:8px;">
+                   &nbsp;
+                  </div> </td> 
+                </tr> 
+                <tr> 
+                 <th class="v_top" scope="row">标题：</th> 
+                 <td rel="QYKFYQKT"> 
+                    <div style="width:342px;height:110px;"></div>
+                    <div style="color:#888585;margin-bottom:5px;">
+                      如需改变标题位置，请在右边点击标题，并拖动改变位置、大小
+                    </div> 
+                  </td> 
+                </tr> 
+                <tr> 
+                 <th class="v_top" scope="row">邀请语：</th> 
+                 <td rel="wincontent"> 
+                  <div style="width:342px;height:110px;"></div>
+                    <div style="color:#888585;margin-bottom:5px;">
+                      如需改变标题位置，请在右边点击标题，并拖动改变位置、大小
+                    </div> 
+                  </td> 
+                </tr> 
+                <tr class="zdy_type_show" style="display:none;"> 
+                 <th class="v_top" scope="row">同意区域：</th> 
+                 <td rel="up_accept_pre"> 
+                  <div> 
+                   <div style="width:30px;height:12px;position: relative;display:inline-block;"> 
+                    <div class="" style="position: absolute; opacity: 0.4;background: #FFF url(../../assets/img/vline_green.gif) top left repeat;font-size: 0;height: 2px!important;width: 100%;"></div> 
+                    <div class="" style="position: absolute; opacity: 0.4;background: #FFF url(../../assets/img/vline_green.gif) top left repeat;bottom: 0;font-size: 0;height: 2px!important;width: 100%;"></div> 
+                    <div class="" style="position: absolute; opacity: 0.4;background: #FFF url(../../assets/img/vline_green.gif) top left repeat;right: 0;font-size: 0;height: 100%;width: 2px!important;"></div> 
+                    <div class="" style="position: absolute; opacity: 0.4;background: #FFF url(../../assets/img/vline_green.gif) top left repeat;font-size: 0;height: 100%;width: 2px!important;"></div> 
+                   </div> 
+                   <span style="color:green;">绿色虚线框为同意邀请点击区域，请在右边拖动改变区域大小、位置，访客点击该区域将关闭邀请窗口并打开聊天窗口</span> 
+                  </div> <p style="display:none;"><label>距左</label>：<input name="acceptleft" type="text" value="170" class="text1 inputcheck" style="width:40px" /> px &nbsp;&nbsp;&nbsp;<label>距上</label>：<input name="accepttop" type="text" value="195" class="text1 inputcheck" style="width:40px" /> px</p> <p style="display:none;"><label>宽度</label>：<input name="acceptwidth" type="text" value="140" class="text1 inputcheck" style="width:40px" /> px &nbsp;&nbsp;&nbsp;<label>高度</label>：<input name="acceptheight" type="text" value="41" class="text1 inputcheck" style="width:40px" /> px</p> </td> 
+                </tr> 
+                <tr class="zdy_type_show" style="display:none;"> 
+                 <th class="v_top" scope="row">拒绝区域：</th> 
+                 <td rel="up_refuse_pre"> 
+                  <div> 
+                   <div style="width:30px;height:12px;position: relative;display:inline-block;"> 
+                    <div class="" style="position: absolute; opacity: 0.4;background: #FFF url(../../img/vline_red.gif) top left repeat;font-size: 0;height: 2px!important;width: 100%;"></div> 
+                    <div class="" style="position: absolute; opacity: 0.4;background: #FFF url(../../assets/img/vline_red.gif) top left repeat;bottom: 0;font-size: 0;height: 2px!important;width: 100%;"></div> 
+                    <div class="" style="position: absolute; opacity: 0.4;background: #FFF url(../../assets/img/vline_red.gif) top left repeat;right: 0;font-size: 0;height: 100%;width: 2px!important;"></div> 
+                    <div class="" style="position: absolute; opacity: 0.4;background: #FFF url(../../assets/img/vline_red.gif) top left repeat;font-size: 0;height: 100%;width: 2px!important;"></div> 
+                   </div> 
+                   <span style="color:#F26E5E;">红色虚线框为拒绝邀请点击区域，请在右边拖动改变区域大小、位置，访客点击该区域将直接关闭邀请窗口</span> 
+                  </div> <p style="display:none;"><label>距左</label>：<input name="refuseleft" type="text" value="326" class="text1 inputcheck" style="width:40px" /> px &nbsp;&nbsp;&nbsp;<label>距上</label>：<input name="refusetop" type="text" value="195" class="text1 inputcheck" style="width:40px" /> px</p> <p style="display:none;"><label>宽度</label>：<input name="refusewidth" type="text" value="140" class="text1 inputcheck" style="width:40px" /> px &nbsp;&nbsp;&nbsp;<label>高度</label>：<input name="refuseheight" type="text" value="41" class="text1 inputcheck" style="width:40px" /> px</p> </td> 
+                </tr> 
+                <tr> 
+                 <th scope="row" class="v_top">显示位置：</th> 
+                 <td> 
+                  <div class="left"> 
+                   <ul class="dq_li cls"> 
+                    <li rel="lt"></li> 
+                    <li rel="mt"></li> 
+                    <li rel="rt" style="margin-right:0"></li> 
+                    <li rel="lc"></li> 
+                    <li rel="mc" class="index"></li> 
+                    <li rel="rc" style="margin-right:0"></li> 
+                    <li rel="lb" style="margin-bottom:0"></li> 
+                    <li rel="mb" style="margin-bottom:0"></li> 
+                    <li rel="rb" style="margin:0"></li> 
+                   </ul> 
+                  </div> 
+                  <div class="left" style="margin-top:48px;margin-left:20px;">
+                    X偏移: 
+                   <input name="offsetx" type="text" value="0" class="text1" style="width:40px;margin-bottom:10px" /> PX 
+                   <br /> Y偏移: 
+                   <input name="offsety" type="text" value="0" class="text1" style="width:40px;" /> PX 
+                  </div> </td> 
+                </tr> 
+                <tr> 
+                 <th style="height:20px" scope="row">浮动模式：</th> 
+                 <td><input name="float" type="radio" value="0" /> <label class="input_radio_lab float_radio_lab">不漂浮</label>&nbsp;&nbsp;&nbsp; <input name="float" type="radio" value="1" checked="" /> <label class="input_radio_lab float_radio_lab">漂浮</label> </td>
+                </tr> 
+                <tr> 
+                 <td colspan="2">
+                  <div class="title_kf_cp" style="width:94px;margin-top:10px;">
+                   邀请方式设置
+                  </div></td> 
+                </tr> 
+                <tr> 
+                 <td colspan="2">
+                  <div style="background:url(../../assets/img/kf_bg0701.gif) repeat-x;height:2px"></div></td> 
+                </tr> 
+                <tr> 
+                 <th class="invitestyle" style="vertical-align: top;padding-top:4px" scope="row"><input name="auto_invite_type" type="checkbox" value="1" checked="" /><label class="input_chkbox_lab">自动邀请</label></th> 
+                 <td style="text-indent:20px"> <p>访客在页面停留 <input name="stay_time" type="text" class="text3" value="1" style="width:20px" /> 秒后邀请</p> <p>访客拒绝 <input type="text" value="1" style="width:25px" size="1" name="auto_invite_times" class="text3" /> 次后不再发起邀请</p> <p><input name="autoinvite" type="hidden" value="0" />访客拒绝邀请后，<input type="text" value="30" style="width:25px" size="1" name="interval" readonly="" class="text3 input_bg" /> 秒再次弹出邀请</p> <p><input name="isShowWin" type="checkbox" value="1" checked="" style="margin-left:0px" /><label class="input_chkbox_lab">&nbsp;无客服可分配或全不在线时，不弹出自动邀请</label></p> </td> 
+                </tr> 
+                <tr id="invite_time"> 
+                 <th class="invitestyle" scope="row"><input name="invite_type" type="checkbox" value="1" checked="" /><label class="input_chkbox_lab">手动邀请</label></th> 
+                 <td style="text-indent:20px">访客拒绝 <input class="text3" type="text" value="10" style="width:25px" size="1" name="invite_times" /> 次后不再发起邀请</td> 
+                </tr> 
+                <tr> 
+                 <th scope="row">&nbsp;</th> 
+                 <td> 
+                  <input id="upfile" rel="" type="hidden" name="upfile" value="" /> <input id="up_invite" type="hidden" name="invitelink" value="" /> <input id="up_refuse" type="hidden" name="refuselink" value="" /> <input id="up_accept" type="hidden" name="acceptlink" value="" /> <input id="titlecolor" type="hidden" name="titlecolor" value="#4169E1" /> <input id="wordcolor" type="hidden" name="wordcolor" value="#333333" /> <input type="hidden" name="titlesize" value="16" /> <input type="hidden" name="wordsize" value="14" /> <input type="hidden" name="bgurl" value="new_themes_01" /> <input type="hidden" name="bgcolor" value="#000000" /> <input type="hidden" name="inv_position" value="mc" /> <input type="hidden" name="backsysth" value="" /> <input type="submit" value="保存设置" class="button2" style="margin-right:25px;" /> <input type="reset" value="取消" class="button2" id="cancel" /> 
+                  </td> 
+                </tr> 
+               </tbody>
+              </table> 
+             </div> 
+            </div> 
+            <div class="ser_invite_view_right">
+              
+            </div>
+          </div> 
+        </form>
       </div>
       <div class="nav_itemco none">
         <div class="location">您当前的位置：CC客服 &gt; <span>设置中心</span> &gt; <span>访客对话窗口</span></div>
-        4
+        <form action="" method="post" id="conversation_form"> 
+          <div class="ser_invite_view_left"> 
+            <input type="hidden" name="website" id="website" value="133299" /> 
+            <div style="width:430px; background-color: #F9FBFF; border:1px solid #c5e0ed;"> 
+              <table width="100%" border="0" cellspacing="5" cellpadding="0" class="tab_ser_invite"> 
+                <tbody>
+                  <tr> 
+                    <td colspan="2">
+                      <div class="title_kf_cp">
+                      基本设置
+                      </div>
+                    </td> 
+                  </tr> 
+                  <tr> 
+                    <td colspan="2"><img src="../../assets/img/kf_bg0701.gif" /></td> 
+                  </tr> 
+                  <tr> 
+                    <th scope="row">窗口布局：</th> 
+                    <td> 
+                      <input style="vertical-align: middle;" class="radio" name="chatwinLayout" type="radio" value="2" checked="" /><label class="chatwinLayout_lbl" style="vertical-align: middle;cursor:pointer;"><img style="vertical-align: middle;border-radius:2px;" src="../../assets/img/lay_new.jpg" /></label>&nbsp;&nbsp;&nbsp;&nbsp; <input style="vertical-align: middle;" class="radio" name="chatwinLayout" type="radio" value="1" /><label class="chatwinLayout_lbl" style="vertical-align: middle;cursor:pointer;"><img style="vertical-align: middle;border-radius:2px;" src="../../assets/img/lay_old.jpg" /></label> 
+                    </td> 
+                  </tr> 
+                  <tr class="new_layout_items"> 
+                    <th scope="row" class="v_top">窗口主题：</th> 
+                    <td> 
+                      <div style="float:left;">
+                        <span id="theme_color_show" style="border:1px solid #E0E2E5;display:block;border-radius: 5px;width:45px;height:45px;margin:5px;margin-left:0;background:#169ada;"></span>
+                      </div> 
+                      <div style="float:left;width:268px;height:55px;margin-left:10px;border: 1px dashed #ccc;padding-bottom: 2px;"> 
+                      <ul> 
+                        <li class="slc_t_color" rel="#da434e" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#da434e"></li> 
+                        <li class="slc_t_color" rel="#ec6300" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#ec6300"></li> 
+                        <li class="slc_t_color" rel="#804d4d" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#804d4d"></li> 
+                        <li class="slc_t_color" rel="#e56281" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#e56281"></li> 
+                        <li class="slc_t_color" rel="#b1639f" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#b1639f"></li> 
+                        <li class="slc_t_color" rel="#6b51c0" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#6b51c0"></li> 
+                        <li class="slc_t_color" rel="#595ca0" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#595ca0"></li> 
+                        <li class="slc_t_color" rel="#f0bc59" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#f0bc59"></li> 
+                        <li class="slc_t_color" rel="#f78750" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#f78750"></li> 
+                        <li class="slc_t_color" rel="#3f48cc" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#3f48cc"></li> 
+                        <li class="slc_t_color" rel="#169ada" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#169ada"></li> 
+                        <li class="slc_t_color" rel="#288add" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#288add"></li> 
+                        <li class="slc_t_color" rel="#31a66b" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#31a66b"></li> 
+                        <li class="slc_t_color" rel="#3074c1" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#3074c1"></li> 
+                        <li class="slc_t_color" rel="#00829a" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#00829a"></li> 
+                        <li class="slc_t_color" rel="#159c77" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#159c77"></li> 
+                        <li class="slc_t_color" rel="#cfbaaa" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#cfbaaa"></li> 
+                        <li class="slc_t_color" rel="#707070" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#707070"></li> 
+                        <li class="slc_t_color" rel="#4fb0ac" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#4fb0ac"></li> 
+                        <li class="slc_t_color" rel="#b13279" style="cursor: pointer;border-radius: 3px;float:left;margin-left:6px;margin-top:5px;width:18px;height:18px;border:1px solid #E0E2E5;background:#b13279"></li> 
+                      </ul> 
+                      </div> <input type="hidden" name="chatwinThemeColor" value="#169ada" /> 
+                      <div style="clear:both;width:20px;height:6px;"></div> 
+                    </td> 
+                  </tr> 
+                  <tr> 
+                    <th scope="row" class="v_top">窗口Logo：</th> 
+                    <td> 
+                      <div style="height:40px;margin-bottom:8px;"> 
+                        <div id="chatwinTitleLogo_p" style="float:left;width:40px;height:40px;border: 1px solid #EAEAEA;background:url('../../assets/img/chatwinlogo.png') scroll 50% 50% no-repeat;"></div> 
+                        <div style="float:left;margin:7px 10px 0 12px" class="upload_btn_cls webuploader-container" id="invite_bg_upload">
+                          <div class="webuploader-pick">
+                            上传Logo
+                          </div>
+                          <div id="rt_rt_1c5l07p0q1u3m1ncu3kc1504ifr4" style="position: absolute; top: 0px; left: 0px; width: 100px; height: 26px; overflow: hidden; bottom: auto; right: auto;">
+                            <input type="file" name="file" class="webuploader-element-invisible" multiple="multiple" accept="image/*" />
+                            <label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+                          </div>
+                        </div> 
+                        <div style="float:left;margin-top:2px;"> 
+                          <font color="#f60">*</font> 支持gif、jpg、png等格式
+                          <br />
+                          <font color="#f60">*</font> 图片尺寸：40px*40px 
+                        </div> 
+                        <input name="chatwinTitleLogo" value="" type="hidden" /> 
+                      </div> 
+                    </td> 
+                  </tr> 
+                  <tr class="new_layout_items"> 
+                    <th scope="row">窗口标题：</th> 
+                    <td> <input value="小计" style="width:280px;height:26px;line-height:26px;" class="text1" type="text" name="chatwinTitle" /> 
+                  </td> 
+                  </tr> 
+                  <tr class="old_layout_items" style="display:none;"> 
+                    <th scope="row" class="v_top">窗口背景：</th> 
+                    <td> 
+                      <div class="box_kfcp_113"> 
+                        <ul> 
+                          <li class="thisbg"><img class="change_bg" src="../../assets/img/thumb.png" rel="beauty_01" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="flower_01" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="flower_02" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="flower_03" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="flower_04" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="flower_05" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="flower_06" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="flower_07" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="flower_08" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="default" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="red" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="green" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="gray" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="black" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="rose" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="purple" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="blue" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="brown" /></li> 
+                          <li><img class="change_bg" src="../../assets/img/thumb.png" rel="cuilv" /></li> 
+                        </ul> 
+                      </div> 
+                    </td> 
+                  </tr> 
+ <!--                  <tr> 
+                    <td colspan="2">
+                      <div class="title_kf_cp">
+                        名片设置
+                      </div>
+                    </td> 
+                  </tr> 
+                  <tr> 
+                    <td colspan="2"><img src="../../assets/img/kf_bg0701.gif" /></td> 
+                  </tr> 
+                  <tr> 
+                    <th scope="row" class="v_top">名片图片：</th> 
+                    <td id="_upload_"> 
+                     <div class="kf_zdy_main" style="background-color: #F4F9FF; width:350px;height:170px;"> 
+                      <div style="float:left;border: 1px solid #EAEAEA;border-radius:2px;height:120px;width:120px;margin:10px;overflow: hidden;" id="upload_file">
+                        <img width="120" src="" />
+                      </div> 
+                      <div style="float:left;" id="upload_area"> 
+                        <div style="margin-top:25px;line-height:18px;margin-left:12px;color:#666666;"> 
+                          <font color="#f60">*</font> 支持gif、jpg、png等格式
+                          <br />
+                          <font color="#f60">*</font> 图片尺寸：150px*150px
+                          <br />
+                          <font color="#f60">*</font> 图片大小请不要超过1M 
+                        </div> 
+                       <div style="float:left;margin:10px 10px 0 30px" class="upload_btn_cls webuploader-container" id="cplogo_upload">
+                        <div class="webuploader-pick">
+                         上传图片
+                        </div>
+                        <div id="rt_rt_1c5l07p0qtlcbqdp32b411qnb7" style="position: absolute; top: 0px; left: 0px; width: 100px; height: 26px; overflow: hidden; bottom: auto; right: auto;">
+                         <input type="file" name="file" class="webuploader-element-invisible" multiple="multiple" accept="image/*" />
+                         <label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+                        </div>
+                       </div> 
+                      </div> 
+                      <div style="padding-left:10px;float:left;height:30px;width:340px;">
+                        链接：
+                        <input value="http://linheqin.com" style="width:270px;" class="text1" type="text" name="cardurl" />
+                      </div> 
+                     </div> 
+                    </td> 
+                  </tr> --> 
+                  <!--上传图片后显示--> 
+          <!--         <tr> 
+                    <th scope="row" class="v_top">文字描述：</th> 
+                    <td>
+                      <div style="width: 350px;height:110px;border: 1px solid #eee;"></div>
+                      </div><textarea name="right_words" cols="" rows="" class="textarea2" style="visibility: hidden; display: none;">您好！欢迎您访问本网站！</textarea>
+                    </td> 
+                  </tr> 
+                  <tr> 
+                    <th class="v_top" scope="row">客服资料：</th> 
+                    <td> 
+                      <input name="job_no" type="checkbox" value="1" class="radio" checked="" />工号 <input name="realname" type="checkbox" value="1" class="radio" checked="" />姓名 <input name="nickname" type="checkbox" value="1" class="radio" checked="" />昵称 <input name="tel" type="checkbox" value="1" class="radio" checked="" />电话 <input name="email" type="checkbox" value="1" class="radio" checked="" />邮箱 <br /><input type="checkbox" name="showotherim" value="1" class="radio" checked="" />显示其他通讯软件图标 
+                      <div style="float:right;width: 14px;height:14px;margin-top:-7px;margin-right:12px;">
+                        <img src="../../assets/img/prompt.gif" class="ck_helptips" data-html="勾选项将作为客服资料显示在访客对话窗口内（如果该项存在的情况下）。" data-variation="inverted" data-offset="3" />
+                      </div> 
+                    </td> 
+                  </tr> 
+                  <tr> 
+                    <td colspan="2">
+                      <div style="width:83px;margin-top:5px;" class="title_kf_cp">
+                      广告位设置
+                      </div>
+                    </td> 
+                  </tr> 
+                  <tr> 
+                    <td colspan="2"><img src="../../assets/img/kf_bg0701.gif" /></td> 
+                  </tr> 
+                  <tr> 
+                    <th scope="row">是否显示：</th> 
+                    <td> <input class="radio" name="adv_state" type="radio" value="0" checked="" /><label class="advstate_lbl">显示</label>&nbsp;&nbsp; <input class="radio" name="adv_state" type="radio" value="1" /><label class="advstate_lbl">不显示</label> </td> 
+                  </tr> 
+                  <tr> 
+                    <th scope="row" style="padding-top:0px;" class="v_top">广告图片：</th> 
+                    <td> 
+                      <div style=""> 
+                        <div id="advpic_upload_dc" style="float:left;overflow:hidden;width:200px;height:158px;border:1px solid #EAEAEA;border-radius:2px;background:url('../../assets/img/up_img.gif') no-repeat;"> 
+                        </div> 
+                        <div style="float:left;"> 
+                          <div style="margin-top:23px;margin-left:13px;"> 
+                            <font color="#f60">*</font> gif、jpg、png等格式
+                            <br />
+                            <font color="#f60">*</font> 图片尺寸说明 
+                            <img style=" vertical-align: -2px;" src="../../assets/img/prompt.gif" class="ck_helptips" data-variation="inverted" data-offset="3" data-html="&lt;font color='#f60'&gt;*&lt;/font&gt; &lt;span style='color:rgb(94, 246, 94);'&gt;新版&lt;/span&gt;窗口布局广告图片最佳尺寸为200px*158px.&lt;br/&gt;&lt;font color='#f60'&gt;*&lt;/font&gt; 旧版窗口布局广告图片最佳尺寸为200px*115px." /> 
+                          </div> 
+                          <div style="margin:10px 10px 0 25px" class="upload_btn_cls webuploader-container" id="advpic_upload">
+                            <div class="webuploader-pick">
+                              上传图片
+                            </div>
+                            <div id="rt_rt_1c5l07p0o6jjp3m1pk1u0q1spq1" style="position: absolute; top: 0px; left: 0px; width: 100px; height: 26px; overflow: hidden; bottom: auto; right: auto;">
+                              <input type="file" name="file" class="webuploader-element-invisible" multiple="multiple" accept="image/*" />
+                              <label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+                            </div>
+                          </div> 
+                        </div> 
+                        <input name="adv_pic" value="" type="hidden" /> 
+                      </div> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                    <th scope="row">链接地址：</th> 
+                    <td> <input name="adv_link" type="text" value="http://" style="width:315px; border:1px solid #abadb3; height:22px; line-height:20px;" /> </td> 
+                  </tr> 
+                  <tr> 
+                    <td colspan="2">
+                      <div style="width:83px;margin-top:5px;" class="title_kf_cp">
+                        提示语设置
+                      </div>
+                    </td> 
+                  </tr> 
+                  <tr> 
+                    <td colspan="2"><img src="../../assets/img/kf_cp/kf_bg0701.gif" /></td> 
+                  </tr> 
+                  <tr> 
+                    <th scope="row" class="v_top">欢迎语：</th> 
+                    <td>
+                        <div style="width: 350px;height:110px;border: 1px solid #eee;"></div>
+                    </td> 
+                  </tr> 
+                  <tr> 
+                    <th scope="row" class="v_top">繁忙消息：</th> 
+                    <td><textarea name="busy_words" cols="" rows="" class="textarea2" style="width:340px; height:30px;">您好，现在客服正忙，请稍候…</textarea></td> 
+                  </tr> 
+                  <tr> 
+                    <th scope="row" class="v_top">离开消息：</th> 
+                    <td> 
+                      <textarea name="leave_message" cols="" rows="" class="textarea2" style="width:340px; height:30px;">您好，现在客服不在座位上，请稍候…</textarea><br /> 当 <input name="time1" type="text" value="120" class="text3" style="width:23px; margin:5px 0;" /> 秒客服没回复，系统消息：<br /> 
+                      <textarea name="noreply1" cols="" rows="" class="textarea2" style="width:340px; height:30px;">您好，客服正在查询中，请稍候…</textarea><br /> 当
+                       <input name="time2" type="text" value="100" class="text3" style="width:23px; margin:5px 0;" /> 秒访客没回复，系统消息：<br /> 
+                       <textarea name="noreply2" cols="" rows="" class="textarea2" style="width:340px; height:30px;">您好，请问还有什么可以帮到你的吗？</textarea> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                    <th scope="row">&nbsp;</th> 
+                    <td> 
+                      <input type="hidden" name="myfile" value="" id="myfile" /> 
+                      <input type="hidden" name="bgurl" value="beauty_01" /> 
+                      <input type="hidden" name="bgcolor" value="beauty_01" /> 
+                      <input type="submit" value="保存设置" class="button2" style="margin-right:25px;" /> 
+                      <input type="reset" value="取消" class="button2" />
+                    </td> 
+                  </tr>  -->
+                </tbody>
+              </table> 
+            </div> 
+          </div> 
+        </form>
       </div>
       <div class="nav_itemco none">
         <div class="location" style="font-size:12px;">您当前的位置：CC客服 &gt; <span>设置中心</span> &gt; <span>直接对话窗口</span></div>
